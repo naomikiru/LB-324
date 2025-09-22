@@ -23,7 +23,7 @@
 5. Bei jedem merge in den main Ast erfolgt eine automatische Auslieferung auf Azure.
 
 ## Laufende Applikation
-https://<DEIN_AZURE_APP_NAME>.azurewebsites.net
+https://lb-324-eradbffabmbwh6hz.switzerlandnorth-01.azurewebsites.net/
 
 ## Administrative Vorgaben
 1. Beispiel Projekt von Moodle laden.
