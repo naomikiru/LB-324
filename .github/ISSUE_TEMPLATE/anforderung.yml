@@ -1,0 +1,68 @@
+﻿name: Anforderung
+description: Neue Funktionalität als Anforderung erfassen
+title: "[Anforderung] Kurztitel"
+labels: []
+body:
+  - type: input
+    id: zielsystem
+    attributes:
+      label: Zielsystem
+      description: Betroffenes System oder Teilsystem
+      placeholder: z.B. Tagebuch Web App
+    validations:
+      required: true
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      description: muss = hoch, soll = mittel, wird = niedrig
+      options:
+        - muss
+        - soll
+        - wird
+    validations:
+      required: true
+  - type: dropdown
+    id: systemaktivitaet
+    attributes:
+      label: Systemaktivität
+      description: Wähle die passende Formulierung
+      options:
+        - dem Benutzer die Möglichkeit bieten
+        - dem Administrator die Möglichkeit bieten
+        - fähig sein
+    validations:
+      required: true
+  - type: textarea
+    id: ergaenzungen
+    attributes:
+      label: allf. Ergänzungen
+      description: Optionale Zusatzinfos (z.B. Datei/Netzwerk)
+      placeholder: z.B. wrml-Datei über das Netzwerk
+    validations:
+      required: false
+  - type: textarea
+    id: funktionalitaet
+    attributes:
+      label: Funktionalität
+      description: Was soll das System tun?
+      placeholder: z.B. Szenengraphen laden
+    validations:
+      required: true
+  - type: textarea
+    id: bedingungen
+    attributes:
+      label: Bedingungen
+      description: Zeitlich mit „wenn“, logisch mit „falls“
+      placeholder: z.B. falls der Benutzer eingeschrieben ist
+    validations:
+      required: false
+  - type: checkboxes
+    id: typ
+    attributes:
+      label: Typ der Anforderung (Label)
+      description: Passende Label anhaken
+      options:
+        - label: Funktionale Anforderung
+        - label: Qualitätsanforderung
+        - label: Randanforderung
